@@ -8,21 +8,49 @@
 
 #import "GuideCoverView.h"
 
+@interface GuideCoverView ()
+{
+    NSUInteger _currentPageDraw;
+}
+@end
 
 @implementation GuideCoverView
 - (instancetype)initWithItems:(NSArray *)items{
     if (self = [super init]) {
         self.ItemArr = items.mutableCopy;
         self.frame = [UIScreen mainScreen].bounds;
+        UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(next:)];
+        [self addGestureRecognizer:tap];
+        _currentPageDraw = 0;
         [self drawRegions];
     }
     return self;
 }
+- (void)next:(UITapGestureRecognizer *)sender{
+    [self removeAllSubLayers];
+    _currentPageDraw ++;
+    if (_currentPageDraw < self.ItemArr.count) {
+        [self drawRegions];
+    }else{
+        [self removeFromSuperview];
+    }
+}
 - (void)drawRegions{
-    if (self.ItemArr.count) {
+    if (self.ItemArr.count && _currentPageDraw < self.ItemArr.count) {
+        id item = self.ItemArr[_currentPageDraw];
+        if ([item isKindOfClass:[NSArray class]]) {
+            [self drawOneGroup:item];
+        }else if ([item isKindOfClass:[LoaderItemModel class]]){
+            [self drawOneGroup:@[item]];
+        }
+    }
+}
+
+- (void)drawOneGroup:(NSArray *)models{
+    if (models.count) {
         UIBezierPath *path = [UIBezierPath bezierPathWithRect:self.frame];
         CAShapeLayer *layer = [CAShapeLayer layer];
-        for (LoaderItemModel *model in self.ItemArr) {
+        for (LoaderItemModel *model in models) {
             if (model.loaderImage.length) {
                 UIImageView *image = [[UIImageView alloc]initWithImage:[UIImage imageNamed:model.loaderImage]];
                 image.frame = CGRectMake(model.loaderRect.origin.x, model.loaderRect.origin.y, image.image.size.width, image.image.size.height);
@@ -66,7 +94,11 @@
         case Circle:
         {
             CGFloat rad = MAX(model.region.rect.size.width, model.region.rect.size.height);
-            bezierPath = [UIBezierPath bezierPathWithOvalInRect:CGRectMake(model.region.rect.origin.x,model.region.rect.origin.y, rad, rad)];
+            if (rad == model.region.rect.size.width) {
+                bezierPath = [UIBezierPath bezierPathWithOvalInRect:CGRectMake(model.region.rect.origin.x,model.region.rect.origin.y - (rad - model.region.rect.size.height)/2, rad, rad)];
+            }else{
+                bezierPath = [UIBezierPath bezierPathWithOvalInRect:CGRectMake(model.region.rect.origin.x - (rad - model.region.rect.size.width)/2,model.region.rect.origin.y, rad, rad)];
+            }
         }
             break;
         case Oval:
@@ -234,6 +266,11 @@
     UIImage* tImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     return tImage;
+}
+- (void)removeAllSubLayers{
+    for (CALayer *layer in self.layer.sublayers) {
+        [layer removeFromSuperlayer];
+    }
 }
 - (void)showInView:(UIView *)view{
     [view addSubview:self];

@@ -17,6 +17,7 @@ typedef NS_ENUM(NSInteger ,LinkImageStyle) {
     LinkImageStyleTortuousArrow,
     LinkImageStyleTapGesture,
     LinkImageStyleRad,
+    LinkImageStyleLeftRad,
     LinkImageStyleCustom
 };
 

@@ -13,7 +13,8 @@ static NSString *LineRegularArrow = @"直线箭头细";
 static NSString *LineMediumArrow = @"直线箭头粗";
 static NSString *TortuousArrow = @"折线箭头";
 static NSString *TapGesture = @"点击手势";
-static NSString *Rad = @"旋转箭头";
+static NSString *Rad = @"弯箭头";
+static NSString *LeftRad = @"左弯箭头";
 
 @implementation LinkImageModel
 
@@ -31,6 +32,11 @@ static NSString *Rad = @"旋转箭头";
             case LinkImageStyleRad:
             {
                 model.customImageName = Rad;
+            }
+                break;
+            case LinkImageStyleLeftRad:
+            {
+                model.customImageName = LeftRad;
             }
                 break;
             case LinkImageStyleDefult:

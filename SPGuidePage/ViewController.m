@@ -44,10 +44,7 @@
     LinkImageModel *link2 = [LinkImageModel initWithStyle:LinkImageStyleTortuousArrow CustomImage:nil Position:LinkImagePositionLeftUnder OffsetX:0 OffsetY:0];
     TextModel *title1 = [TextModel initWithFont:[UIFont systemFontOfSize:18] text:@"你你你你你你你你你你你你你你你你" Alignment:TextAlignmentLeft];
     LoaderItemModel *itemLineroundedRect = [LoaderItemModel initWithLink:link2 Title:title1 Region:LineroundedRect];
-    
-    
     GuideCoverView *guideV = [[GuideCoverView alloc]initWithItems:@[itemOval,itemCircle,itemRounded,itemLineroundedRect,itemImage]];
-    
     [guideV showInView:self.view];
 }
 
