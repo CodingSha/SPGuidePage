@@ -1,8 +1,8 @@
-#SPGuidePage
+**SPGuidePage**
 
-##专为新手引导功能打造的开源库
+**专为新手引导功能打造的开源库**
 
-###支持特性：
+支持特性：
 
 * 支持多种镂空，圆、椭圆、矩形、圆角矩形、虚线边框矩形、以及使用cornerRadis字段可自定义的所有shape。
 * 支持纯图片添加，也支持图文，更支持指定区域高亮+图文
@@ -14,4 +14,4 @@
 
 demo运行样例
 
-![img](https://github.com/CodingSha/SPGuidePage/blob/master/WechatIMG3805.png?raw=true)
+![img](https://github.com/CodingSha/SPGuidePage/blob/master/GuidePage.gif?raw=true)
