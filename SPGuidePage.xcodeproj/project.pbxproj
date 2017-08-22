@@ -26,6 +26,7 @@
 		D1AEA3E01F46EEB90054E2E7 /* TextModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D1AEA3D51F46EEB90054E2E7 /* TextModel.m */; };
 		D1AEA3E41F46F5810054E2E7 /* WechatIMG3805.png in Resources */ = {isa = PBXBuildFile; fileRef = D1AEA3E31F46F5810054E2E7 /* WechatIMG3805.png */; };
 		D1AEA3E81F4BB8070054E2E7 /* 左弯箭头@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D1AEA3E71F4BB8070054E2E7 /* 左弯箭头@2x.png */; };
+		D1AEA3EA1F4BBD3D0054E2E7 /* GuidePage.gif in Resources */ = {isa = PBXBuildFile; fileRef = D1AEA3E91F4BBD3D0054E2E7 /* GuidePage.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +58,7 @@
 		D1AEA3D51F46EEB90054E2E7 /* TextModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextModel.m; sourceTree = "<group>"; };
 		D1AEA3E31F46F5810054E2E7 /* WechatIMG3805.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WechatIMG3805.png; sourceTree = "<group>"; };
 		D1AEA3E71F4BB8070054E2E7 /* 左弯箭头@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "左弯箭头@2x.png"; sourceTree = "<group>"; };
+		D1AEA3E91F4BBD3D0054E2E7 /* GuidePage.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = GuidePage.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				D1AEA3E31F46F5810054E2E7 /* WechatIMG3805.png */,
+				D1AEA3E91F4BBD3D0054E2E7 /* GuidePage.gif */,
 				D1AEA3AE1F46EE770054E2E7 /* SPGuidePage */,
 				D1AEA3AD1F46EE770054E2E7 /* Products */,
 			);
@@ -187,6 +190,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1AEA3EA1F4BBD3D0054E2E7 /* GuidePage.gif in Resources */,
 				D1AEA3D91F46EEB90054E2E7 /* 折线箭头@2x.png in Resources */,
 				D1AEA3E41F46F5810054E2E7 /* WechatIMG3805.png in Resources */,
 				D1AEA3BF1F46EE770054E2E7 /* LaunchScreen.storyboard in Resources */,
