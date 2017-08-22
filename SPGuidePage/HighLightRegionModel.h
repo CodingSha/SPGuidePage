@@ -8,12 +8,12 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreGraphics/CoreGraphics.h>
-
+//镂空形状
 typedef NS_ENUM(NSInteger,BezierPathType) {
-    Circle = 1,
-    Oval,
-    RoundedRect,
-    DottedLineRoundedRect
+    Circle = 1,//圆
+    Oval,//椭圆
+    RoundedRect,//矩形（可带圆角）
+    DottedLineRoundedRect//虚线边框，中间不镂空
 };
 
 @interface HighLightRegionModel : NSObject

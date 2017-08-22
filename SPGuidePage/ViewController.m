@@ -27,7 +27,7 @@
     
     LinkImageModel *link = [LinkImageModel initWithStyle:LinkImageStyleDefult CustomImage:nil Position:LinkImagePositionRightOver OffsetX:0 OffsetY:0];
     HighLightRegionModel *circle = [HighLightRegionModel initWith:Circle Rect:self.btn1.frame Radius:0];
-    TextModel *title = [TextModel initWithFont:[UIFont systemFontOfSize:18] text:@"我我我我我我我我我我我我我我" Alignment:TextAlignmentRight];
+    TextModel *title = [TextModel initWithFont:[UIFont systemFontOfSize:18] text:@"我是大娃，会喷火" Alignment:TextAlignmentRight];
     LoaderItemModel *itemCircle = [LoaderItemModel initWithLink:link Title:title Region:circle];
     
     
@@ -42,7 +42,7 @@
     
     HighLightRegionModel *LineroundedRect = [HighLightRegionModel initWith:DottedLineRoundedRect Rect:self.btn4.frame Radius:3];
     LinkImageModel *link2 = [LinkImageModel initWithStyle:LinkImageStyleTortuousArrow CustomImage:nil Position:LinkImagePositionLeftUnder OffsetX:0 OffsetY:0];
-    TextModel *title1 = [TextModel initWithFont:[UIFont systemFontOfSize:18] text:@"你你你你你你你你你你你你你你你你" Alignment:TextAlignmentLeft];
+    TextModel *title1 = [TextModel initWithFont:[UIFont systemFontOfSize:18] text:@"我是二娃，会洒水" Alignment:TextAlignmentLeft];
     LoaderItemModel *itemLineroundedRect = [LoaderItemModel initWithLink:link2 Title:title1 Region:LineroundedRect];
     GuideCoverView *guideV = [[GuideCoverView alloc]initWithItems:@[itemOval,itemCircle,itemRounded,itemLineroundedRect,itemImage]];
     [guideV showInView:self.view];
