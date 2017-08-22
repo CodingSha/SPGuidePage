@@ -25,6 +25,7 @@
 		D1AEA3DF1F46EEB90054E2E7 /* LoaderItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D1AEA3D31F46EEB90054E2E7 /* LoaderItemModel.m */; };
 		D1AEA3E01F46EEB90054E2E7 /* TextModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D1AEA3D51F46EEB90054E2E7 /* TextModel.m */; };
 		D1AEA3E41F46F5810054E2E7 /* WechatIMG3805.png in Resources */ = {isa = PBXBuildFile; fileRef = D1AEA3E31F46F5810054E2E7 /* WechatIMG3805.png */; };
+		D1AEA3E81F4BB8070054E2E7 /* 左弯箭头@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D1AEA3E71F4BB8070054E2E7 /* 左弯箭头@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +56,7 @@
 		D1AEA3D41F46EEB90054E2E7 /* TextModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextModel.h; sourceTree = "<group>"; };
 		D1AEA3D51F46EEB90054E2E7 /* TextModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextModel.m; sourceTree = "<group>"; };
 		D1AEA3E31F46F5810054E2E7 /* WechatIMG3805.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WechatIMG3805.png; sourceTree = "<group>"; };
+		D1AEA3E71F4BB8070054E2E7 /* 左弯箭头@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "左弯箭头@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 			children = (
 				D1AEA3C61F46EEB90054E2E7 /* 点击手势@2x.png */,
 				D1AEA3C71F46EEB90054E2E7 /* 弯箭头@2x.png */,
+				D1AEA3E71F4BB8070054E2E7 /* 左弯箭头@2x.png */,
 				D1AEA3C81F46EEB90054E2E7 /* 旋转箭头@2x.png */,
 				D1AEA3C91F46EEB90054E2E7 /* 折线箭头@2x.png */,
 				D1AEA3CA1F46EEB90054E2E7 /* 直线箭头粗@2x.png */,
@@ -191,6 +194,7 @@
 				D1AEA3D61F46EEB90054E2E7 /* 点击手势@2x.png in Resources */,
 				D1AEA3DA1F46EEB90054E2E7 /* 直线箭头粗@2x.png in Resources */,
 				D1AEA3BA1F46EE770054E2E7 /* Main.storyboard in Resources */,
+				D1AEA3E81F4BB8070054E2E7 /* 左弯箭头@2x.png in Resources */,
 				D1AEA3D81F46EEB90054E2E7 /* 旋转箭头@2x.png in Resources */,
 				D1AEA3D71F46EEB90054E2E7 /* 弯箭头@2x.png in Resources */,
 				D1AEA3DB1F46EEB90054E2E7 /* 直线箭头细@2x.png in Resources */,
@@ -370,6 +374,7 @@
 				D1AEA3C51F46EE770054E2E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
